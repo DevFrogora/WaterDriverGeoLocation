@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registration.DriverRegistration">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewRegistrationHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Registration" />
+
+    <!-- First Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+    android:paddingTop="15sp">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Name" />
+
+    <EditText
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@+id/textViewName"
+        android:hint="Name" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="15sp">
+    <TextView
+        android:id="@+id/textViewVehicleNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Number"
+        android:layout_below="@+id/editTextName"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:layout_alignParentRight="true"
+        android:id="@+id/editTextVehicleNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextName"
+        android:ems="10"
+        android:layout_toRightOf="@+id/textViewVehicleNumber"
+        android:inputType="textPersonName"
+        android:hint="vehicle number" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15sp">
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:layout_below="@+id/textViewVehicleNumber"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:layout_alignParentRight="true"
+        android:id="@+id/editTextViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewVehicleNumber"
+        android:ems="10"
+        android:layout_toRightOf="@+id/textViewVehicleNumber"
+        android:inputType="textPersonName"
+        android:hint="Age" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15sp">
+    <TextView
+        android:id="@+id/textViewCarryWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carry Water (Liter)"
+        android:layout_below="@+id/editTextViewAge"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:layout_alignParentRight="true"
+        android:id="@+id/editTextViewCarryWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextViewAge"
+        android:ems="10"
+        android:layout_toRightOf="@+id/textViewCarryWater"
+        android:inputType="textPersonName"
+        android:hint="Carry Water (Liter)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="35sp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15sp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@+id/buttonCaptureImage"
+        android:id="@+id/textViewEmail"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCaptureImage"
+        android:layout_toRightOf="@+id/textViewEmail"
+        android:id="@+id/editTextEmail"
+        android:textSize="20dp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Email"
+        android:layout_below="@+id/editTextEmail"
+        android:id="@+id/textViewConfirmEmail"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewConfirmEmail"
+        android:layout_toRightOf="@+id/textViewConfirmEmail"
+        android:id="@+id/editTextConfirmEmail"
+        android:textSize="20dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="55sp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/buttonRegistration"
+            android:layout_centerHorizontal="true"
+            />
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
